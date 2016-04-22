@@ -1,26 +1,37 @@
 @import "nib"
 @import "normalize.styl"
-@import url('https://fonts.googleapis.com/css?family=Handlee')
-@import url('https://fonts.googleapis.com/css?family=Freckle+Face')
+
+/*Fuente*/
+@font-face
+	font-family: 'HelveticaNeue';
+	src: url('../fonts/HelveticaNeue.eot');
+	src: url('../fonts/HelveticaNeue.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
 
 $white = #FFF
-$light_white = #EFEFEF
+$transparent_white = rgba(255,255,255,0.4)
 
 $black = #000
 
-$gray = #575756
+$blue = #213f99
+$blue2 = #4b5daa
+$blue3 = #426ab3
+$blue4 = #2383c6
+$blue5 = #0090d0
+$blue6 = #00a2ea
+$blue7 = #1ebaff
 
-$light_red = #DB413D
-$red = #B71622
-$dark_red = #8A1622
+$blue1 = #3c4a88
 
 html
 	font-size 16px
-	font-family: 'Freckle Face', cursive /* Fuente de google fonts */
+	font-family: 'HelveticaNeue', sans-serif
 	height 100%
 
 body
-	background red
+	background $white
 	height 100%
 	
 img
@@ -32,8 +43,33 @@ a
 	
 .u-centrar
 	margin 0 auto
-	max-width 960px
+	max-width 1200px
 	text-align center
+	
+.bg-blue1
+	background $blue1
+.bg-blue2
+	background $blue2
+.bg-blue3
+	background $blue3
+.bg-blue4
+	background $blue4
+.bg-blue5
+	background $blue5
+.bg-blue6
+	background $blue6
+.bg-blue7
+	background $blue7
 
 /*HEADER*/
-// @import "../components/Header/estilos.styl"
+@import "../components/Header/estilos.styl"
+
+/*BANNER*/
+@import "../components/Banner/estilos.styl"
+
+.u--ocultar
+	display none
+	
+/*OWL CAROUSEL*/
+@import "owl.carousel.styl"
+@import "owl-default-theme.styl"
