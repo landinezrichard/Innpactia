@@ -1,0 +1,51 @@
+/*SLIDER BLUE*/
+
+.SliderBlue
+	display inline-block
+	width 100%
+	background $blue5
+	
+	&-item
+		display inline-block
+		width 100%
+		max-width 1035px
+		margin 20px auto
+	&-izq
+		display inline-block
+		width 30%
+		vertical-align initial
+		margin 0 2%
+	&-img
+		border-radius 50%
+	&-der
+		width 60%
+		display inline-block
+		vertical-align text-bottom
+		margin 0 2%
+	&-txt
+		text-align left
+		color $white
+		font-weight 300
+		font-size 0.92em
+		display inline-block
+		width 100%
+		margin-bottom 2em
+	&-autor
+		text-align left
+		color $white
+		font-weight 400
+		font-size 0.79em
+		display inline-block
+		width 100%
+		margin-top 2em
+	&-autorD
+		font-weight 500
+/*Tablet Landscape*/
+@media screen and (min-width:1024px)
+	.SliderBlue
+		&-item
+			margin 40px auto
+		&-txt
+			font-size 1.32em
+		&-autor
+			font-size 0.99em

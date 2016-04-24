@@ -1,0 +1,54 @@
+/*CIFRAS*/
+
+.Cifras
+	display inline-block
+	width 100%
+	background $white
+
+	&-title
+		font-weight 400
+		font-size 2em
+		color $blue
+		margin 0
+		margin-top 20px
+	&-txt
+		color $blue
+		font-weight 300
+		font-size 1.4em
+		margin 0
+	&-list
+		display inline-block
+		width 100%
+		margin 15px 0 25px
+	&-item
+		display inline-block
+		text-align center
+		vertical-align top
+		margin 15px 30px
+	&-img
+		display block
+	&-itemTxt
+		margin 0		
+		color $gray
+		font-weight 300
+		font-size 0.92em
+		max-width 160px
+		display inline-block
+@media screen and (min-width:480px)
+	.Cifras
+		&-list
+			display flex
+			flex-flow row nowrap
+			justify-content space-around
+		&-item
+			margin 15px 2.5%
+/*Tablet Landscape*/
+@media screen and (min-width:1024px)
+	.Cifras
+		&-title
+			font-size 2.61em
+			margin-top 40px
+		&-txt
+			font-size 1.94em
+		&-itemTxt
+			font-size 1.32em
