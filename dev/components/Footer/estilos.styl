@@ -1,0 +1,81 @@
+/*FOOTER*/
+
+.Footer
+	display inline-block
+	width 100%
+	background url('../images/01-index/footer.png') center no-repeat
+	margin-top -50px
+	height 358px
+	
+	&-row
+		display inline-block
+		width 100%
+		margin-top 100px
+	
+	&-menu1
+	&-menu2
+		display inline-block
+		margin 25px 10px
+		vertical-align top
+	&-list
+		list-style none
+		padding 0
+		margin 0 0
+		width 100%
+		text-align left
+	&-item
+		margin .5em
+		
+	&-link
+		cursor pointer
+		color $black
+		font-weight 400
+		font-size .91em
+		display inline-block
+		width 100%
+		&:hover
+			font-weight 700
+	&-redes
+		display inline-block
+		width 100%
+	&-redesItem
+		cursor pointer
+		display inline-block
+		width 36px
+		height 36px
+		margin 5px 2.5%
+	&-copy
+		display inline-block
+		width 100%
+@media screen and (min-width:960px)
+	.Footer
+		background url('../images/01-index/footer.png') left no-repeat
+		&-row
+			// margin-left 40%
+			// width 60%
+			display flex
+			justify-content flex-end
+		&-menu1
+		&-menu2			
+			margin 35px 10px
+		&-redes
+			margin 65px 0
+			width 240px
+			vertical-align middle
+/*Tablet Landscape*/
+@media screen and (min-width:1024px)
+	.Footer
+		&-row
+			// margin-left 0
+			// width 100%
+			justify-content center
+			position relative
+		&-menu1
+		&-menu2
+			margin 35px 40px			
+		&-link
+			font-size 1.15em
+		&-redes
+			position absolute
+			right 0
+			top 0
