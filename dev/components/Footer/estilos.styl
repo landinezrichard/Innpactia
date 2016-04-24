@@ -44,9 +44,26 @@
 		width 36px
 		height 36px
 		margin 5px 2.5%
+		&:hover
+			animation animateRedes 1s infinite
 	&-copy
 		display inline-block
 		width 100%
+		
+@keyframes animateRedes
+	16.65%
+		transform translateX(2px)
+	33.3%
+		transform translateX(-2px)
+	49.95%
+		transform translateX(2px)
+	66.6%
+		transform translateX(-2px)
+	83.25%
+		transform translateX(1px)
+	100%
+		transform translateX(0)
+
 @media screen and (min-width:960px)
 	.Footer
 		background url('../images/01-index/footer.png') left no-repeat
