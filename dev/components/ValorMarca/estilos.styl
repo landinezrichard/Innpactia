@@ -1,0 +1,63 @@
+/*VALOR MARCA*/
+
+.ValorMarca
+	display inline-block
+	width 100%
+	background $white
+
+	&-row
+		display inline-block
+		width 100%
+		margin 20px 0
+	&-column
+		display inline-block
+		width 90%
+		vertical-align top
+	&-item
+		display flex
+		// display inline-block
+		width 100%
+		margin .7em 0
+		
+	&-imgContainer
+		display inline-block
+		vertical-align top
+	&-txt
+		display inline-block
+		vertical-align top		
+		border-bottom 1px solid $blue
+		margin-left .4em
+		
+	&-title
+		margin 0
+		color $blue
+		font-weight 500
+		font-size .82em
+		text-align left
+	&-desc
+		color $gray
+		font-size .81em
+		font-weight 300
+		margin 0
+		margin-bottom 1em
+		text-align left
+
+/*Tablet Landscape*/
+@media screen and (min-width:1024px)
+	.ValorMarca
+		&-row
+			margin 40px 0
+		&-column		
+			width 48%
+			&:first-child
+				margin-right 1%
+			&:last-child
+				margin-left 1%
+		&-item
+			&:last-child
+				.ValorMarca-txt
+					border-bottom none
+		&-title
+			font-size 1.2em
+		&-desc
+			font-size 1.15em

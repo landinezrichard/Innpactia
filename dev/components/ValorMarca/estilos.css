@@ -1,0 +1,65 @@
+/*VALOR MARCA*/
+.ValorMarca {
+  display: inline-block;
+  width: 100%;
+  background: $white;
+}
+.ValorMarca-row {
+  display: inline-block;
+  width: 100%;
+  margin: 20px 0;
+}
+.ValorMarca-column {
+  display: inline-block;
+  width: 90%;
+}
+.ValorMarca-item {
+  display: inline-block;
+  width: 100%;
+}
+.ValorMarca-imgContainer {
+  display: inline-block;
+  vertical-align: top;
+}
+.ValorMarca-txt {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 506px;
+  border-bottom: 1px solid $blue;
+}
+.ValorMarca-title {
+  margin: 0;
+  color: $blue;
+  font-weight: 500;
+  font-size: 0.82em;
+  text-align: left;
+}
+.ValorMarca-desc {
+  margin: 0;
+  margin-bottom: 1em;
+  color: $gray;
+  font-weight: 300;
+  font-size: 0.81em;
+  text-align: left;
+}
+/*Tablet Landscape*/
+@media screen and (min-width: 1024px) {
+  .ValorMarca-row {
+    margin: 40px 0;
+  }
+  .ValorMarca-column {
+    width: 45%;
+  }
+  .ValorMarca-column:first-child {
+    margin-right: 2.5%;
+  }
+  .ValorMarca-column:last-child {
+    margin-left: 2.5%;
+  }
+  .ValorMarca-title {
+    font-size: 1.2em;
+  }
+  .ValorMarca-desc {
+    font-size: 1.15em;
+  }
+}
