@@ -49,6 +49,22 @@
 	&-copy
 		display inline-block
 		width 100%
+	&-back
+		display none
+		width 64px
+		height 64px
+		position fixed
+		bottom 0
+		right 0
+		cursor pointer
+	&-backIcon
+		display block
+		width 64px
+		height 64px
+		line-height 64px
+		background $transparent_blue
+		color $white
+		box-shadow 0 0 15px $gray
 		
 @keyframes animateRedes
 	16.65%
@@ -79,6 +95,8 @@
 			margin 65px 0
 			width 240px
 			vertical-align middle
+		&-back
+			right 10%
 /*Tablet Landscape*/
 @media screen and (min-width:1024px)
 	.Footer
@@ -96,3 +114,11 @@
 			position absolute
 			right 0
 			top 0
+@media screen and (min-width:1440px)
+	.Footer
+		&-back
+			right 15%
+@media screen and (min-width:1600px)
+	.Footer
+		&-back
+			right 20%

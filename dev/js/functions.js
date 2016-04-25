@@ -44,9 +44,9 @@ $(document).ready(function() {
 		if(of_window >= of_header && of_header == 662){
 			seccionHow.css('top','-662px');
 			seccionHeader.css('margin-top','0');
-			$(window).scrollTop(0);			
-		}		
-	});	
+			$(window).scrollTop(0);
+		}
+	});
 
 	/*Boton cerrar de "como funciona"*/
 	$('.How-closeBtn').click(function(event){
@@ -89,7 +89,7 @@ $(document).ready(function() {
 		
 	}
 
-	/**/
+	/*Funciones para los Sliders*/
 	var arrow_izq ='<img class="flecha-izq" src="../images/01-index/left-arrow.png">';
 	var arrow_der ='<img class="flecha-izq" src="../images/01-index/right-arrow.png">';
 
@@ -105,6 +105,25 @@ $(document).ready(function() {
 	// 		}
 	// 	},
 	// 	navText: [arrow_izq,arrow_der]
-	// });	
+	// });
 
+	/*Boton Fixed de volver arriba*/
+	var btnVolver = $('.Footer-back');
+
+	$(window).scroll(function(){
+		var of_window = $(window).scrollTop();
+		var alto_pantalla = $( window ).height();		
+		if(of_window >= alto_pantalla){
+			btnVolver.fadeIn();
+		}else{
+			btnVolver.fadeOut();
+		}
+	});
+
+	btnVolver.click(function(event){
+		event.preventDefault();
+		$('html,body').animate({
+			scrollTop: 0
+		},600);
+	});
 });
