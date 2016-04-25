@@ -1,5 +1,23 @@
 $(document).ready(function() {
 
+	/*Funcionalidades Menu*/
+
+	var menus = ['.Menu'];
+
+	/*Mostrar menu mobile*/
+	$('.Header-menuBtn').click(function(){
+		mostrarOcultar('.Menu');
+	});
+
+	function mostrarOcultar(elemento){
+		for (var i = 0; i <= menus.length-1; i++) {
+			if(menus[i] != elemento){
+				$(menus[i]).slideUp();
+			}
+		}
+		$(elemento).slideToggle();
+	}
+
 	/*Boton "Como Funciona"*/
 	var seccionHow = $('.How');
 	var seccionHeader = $('.Header');
@@ -88,38 +106,5 @@ $(document).ready(function() {
 	// 	},
 	// 	navText: [arrow_izq,arrow_der]
 	// });	
-
-	/*Funcionalidades Menu*/
-
-	var menus = ['.MainMenu','.Header-contactoMail','.Header-contactoTel','.Header-contactoRedes'];
-
-	/*Mostrar menu mobile*/
-	$('.Header-mobileMenu').click(function(){
-		mostrarOcultar('.MainMenu');
-	});
-
-	/*Mostrar redes*/
-	$('.Header-mobileRedes').click(function(){
-		mostrarOcultar('.Header-contactoRedes');
-	});
-
-	/*Mostrar contacto*/
-	$('.Header-mobileMail').click(function(){
-		mostrarOcultar('.Header-contactoMail');
-	});
-
-	/*Mostrar tel*/
-	$('.Header-mobileTel').click(function(){
-		mostrarOcultar('.Header-contactoTel');
-	});
-
-	function mostrarOcultar(elemento){
-		for (var i = 0; i <= menus.length-1; i++) {
-			if(menus[i] != elemento){
-				$(menus[i]).slideUp();
-			}
-		}
-		$(elemento).slideToggle();
-	}
 
 });

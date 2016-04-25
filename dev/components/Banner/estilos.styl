@@ -6,6 +6,7 @@
 	background $blue
 	text-align center
 	position relative
+	// margin-top 46px
 	
 	&-slider
 		z-index 0
@@ -82,6 +83,7 @@
 		vertical-align middle
 		margin 0 5px
 	&-menu
+		display none
 		width 100%
 	&-menulist
 		list-style none
@@ -90,8 +92,7 @@
 		width 100%
 	&-menuItem
 		display inline-block
-		float left
-		// width 14.28%
+		float left		
 		height 30px
 		line-height 30px
 		&:hover
@@ -109,6 +110,8 @@
 		&-btn
 			margin 1em auto
 		/*Menu-busqueda*/
+		&-menu
+			display block
 		&-menulist
 			display flex
 			justify-content space-around
@@ -122,6 +125,9 @@
 		&-p
 			display block
 			font-size 0.87em
+// @media screen and (min-width:840px)
+// 	.Banner
+// 		margin-top 0
 /*Tablet Landscape*/
 @media screen and (min-width:1024px)
 	.Banner		

@@ -26,6 +26,8 @@ $blue5 = #0090d0
 $blue6 = #00a2ea
 $blue7 = #1ebaff
 
+$blue8 = #03a1e7
+
 $blue1 = #3c4a88
 
 $fucsia = #d91a6a
@@ -71,9 +73,14 @@ a
 	background $blue6
 .bg-blue7
 	background $blue7
+.bg-blue8
+	background $blue8
 
 /*HEADER*/
 @import "../components/Header/estilos.styl"
+
+/*MENU MOVIL*/
+@import "../components/Menu/estilos.styl"
 
 /*HOW*/
 @import "../components/How/estilos.styl"
@@ -104,6 +111,10 @@ a
 
 .u--ocultar
 	display none
+	
+@media screen and (min-width:720px)
+	.u--ocultar
+		display inline-block
 	
 /*OWL CAROUSEL*/
 @import "owl.carousel.styl"

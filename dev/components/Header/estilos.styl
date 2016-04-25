@@ -1,8 +1,13 @@
 /*Header*/
 .Header
 	display inline-block
-	width 100%	
+	width 100%
 	background $white
+	// position fixed
+	// top 0
+	// left 0
+	// right 0
+	// z-index 99999
 	
 	&-logoLink
 		display inline-block
@@ -16,8 +21,7 @@
 	&-logo
 		margin 0
 		text-indent -9999px
-	&-menu
-		// display inline-block
+	&-menu		
 		float right
 		margin 0
 		padding 0
@@ -30,11 +34,12 @@
 		margin 0 0
 		overflow-x hidden
 		display inline-block
+		float right
+		clear both
 	&-menuItem
 		display inline-block
 		margin 0
-		float left
-		// width 100%
+		float left		
 		&:hover
 			background $blue
 			.Header-menuLink
@@ -46,29 +51,50 @@
 		color $blue
 		font-weight 400
 		font-size .75em
+		display inline-block		
+	&-barras
 		display inline-block
-		// width 90%
-		// padding 1em
+		float right
+	&-bar
+		display inline-block
+		width 50px
+		height 4px
+		float left
+		
 .fa-bars
 	margin-left 0.65em
+	
+@media screen and (min-width:480px)
+	.Header
+		&-logoLink
+			width 150px			
+			height 42px
+			background url('../images/01-index/logo-innpactia.png') center no-repeat
+		&-bar
+			width 60px
+@media screen and (min-width:720px)
+	.Header
+		// position static
+		&-menuBtn
+			display none !important
+		&-bar
+			width 90px	
 /*Tablet Landscape*/
 @media screen and (min-width:1024px)
 	.Header
 		&-logoLink
 			width 188px
-			height 60px
+			// height 60px
+			height 46px
 			background url('../images/01-index/logo-innpactia.png') center no-repeat
 		&-menuList
-			list-style none
-			// padding 0
-			// margin 1em 0
+			list-style none			
 			overflow-x hidden
 			display inline-block
 		&-menuItem
 			display inline-block
 			margin 0			
-		&-menuLink
-			color $blue
-			font-weight 400
-			font-size .99em		
-			display inline-block
+		&-menuLink			
+			font-size .99em			
+		&-bar
+			width 140px
