@@ -1,0 +1,77 @@
+/*HOW*/
+
+.How
+	background $blue
+	display inline-block
+	width 100%
+	height 662px
+	// top 0
+	left 0
+	right 0
+	position absolute
+	top -662px
+		
+	&-title
+		color $white
+		font-size 1.4em
+		font-weight 700
+	&-list
+		display flex
+		width 100%
+		flex-flow row nowrap
+		justify-content space-around
+	&-item
+		display inline-block
+		width 32.33%
+		box-sizing border-box
+		padding 20px
+		vertical-align top
+	
+	&-itemTitle
+		font-size .95em
+		font-weight 600
+		color $white
+		margin .5em 0
+		
+	&-txt
+		color $white
+		margin 0
+		font-size 0.87em
+		font-weight 400
+		
+	&-desc
+		color $white
+		font-size 0.87em
+		font-weight 400
+	&-descLink
+		color $white
+		font-size 0.87em
+		font-weight 400
+		cursor pointer
+		text-decoration underline
+		
+	&-closeBtn
+		cursor pointer
+		position absolute
+		top 25px
+		right 25px
+		display inline-block
+		width 20px
+		height 20px
+		color $white
+/*Tablet Landscape*/
+@media screen and (min-width:1024px)
+	.How
+		&-title
+			font-size 1.7em
+		&-item
+			display flex			
+			box-sizing border-box			
+			flex-flow column nowrap
+			justify-content space-between
+			align-items center
+		&-img
+			max-width 214px
+		&-itemTitle
+			font-size 1.5em
+			font-weight 400

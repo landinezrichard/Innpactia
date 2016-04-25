@@ -1,0 +1,65 @@
+/*SHARE*/
+
+.Share
+	display inline-block
+	left 0
+	margin 0
+	padding 0
+	position fixed
+	top 40%
+	z-index 9999
+	text-align center
+	height 64px
+	
+	&:hover
+		background $black
+		
+		& .Share-btn
+			background $black
+	&-btn
+		position relative
+		z-index 9999		
+	&-btn
+	&-aBtn
+		cursor pointer
+		display inline-block
+		width 100%
+		height 100%
+		// width 32px
+		// height 32px
+	&-img
+		vertical-align middle
+	&-all
+		// display none
+		display inline-block	
+		list-style none
+		padding 0
+		margin 0 0
+		position absolute
+		// left -322px
+		left -270px		
+		background $black
+		top 0
+		width 270px
+		z-index 8000
+		// width 0
+		// height 0
+		// overflow hidden
+		
+	&-item
+		display inline-block
+		width 64px
+		height 64px
+		line-height 64px
+	&-fb
+		:hover
+			background $blue_fb
+	&-tw
+		:hover
+			background $blue_tw
+	&-gp
+		:hover
+			background $red_gp
+	&-em
+		:hover
+			background $orange_em

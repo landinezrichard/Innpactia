@@ -7,20 +7,22 @@ html(lang="es")
 			|	Innpactia
 		link(rel="stylesheet", type="text/css", href="../css/estilos.css")
 		link(rel="stylesheet", type="text/css", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.css")
-	body
+	body		
 		include ../components/Header/template.jade
 		include ../components/Banner/template.jade
+		include ../components/How/template.jade
 		include ../components/Cifras/template.jade
 		include ../components/SliderColor/template.jade
 		include ../components/SliderUni/template.jade
 		include ../components/SliderBlue/template.jade
 		include ../components/ValorMarca/template.jade
+		include ../components/Share/template.jade
 		include ../components/Footer/template.jade
 		div.u-centrar
 			//- include ../components/Center/template.jade
 			//- include ../components/Form/template.jade
 		// build:js ../js/combined.js
-		//- script("text/javascript", src="../js/jquery-2.2.1.min.js")
+		script("text/javascript", src="../js/jquery-2.2.1.min.js")
 		//- script("text/javascript", src="../js/scrollreveal.min.js")
-		//- script("text/javascript", src="../js/funciones-index.js")
+		script("text/javascript", src="../js/functions.js")
 		// endbuild
