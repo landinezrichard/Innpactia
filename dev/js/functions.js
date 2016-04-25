@@ -93,19 +93,19 @@ $(document).ready(function() {
 	var arrow_izq ='<img class="flecha-izq" src="../images/01-index/left-arrow.png">';
 	var arrow_der ='<img class="flecha-izq" src="../images/01-index/right-arrow.png">';
 
-	/*Banner del Index*/
-	// $('.Banner-slides.owl-carousel').owlCarousel({		
-	// 	nav: true,
-	// 	autoPlay: false,
-	// 	slideSpeed: 1000,
-	// 	dots: true,		
-	// 	responsive: {
-	// 		0:{
-	// 			items:1
-	// 		}
-	// 	},
-	// 	navText: [arrow_izq,arrow_der]
-	// });
+	/*Banner Principal*/
+	$('.Banner-slider').owlCarousel({
+		nav: false,
+		autoPlay: true,
+		slideSpeed: 1000,
+		dots: true,
+		responsive: {
+			0:{
+				items:1
+			}
+		},
+		navText: [arrow_izq,arrow_der]
+	});
 
 	/*Boton Fixed de volver arriba*/
 	var btnVolver = $('.Footer-back');

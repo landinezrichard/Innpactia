@@ -102,7 +102,42 @@
 		color $white
 		font-size .75em
 		cursor pointer
-		display block	
+		display block
+/*Controles OWl*/
+
+.Banner-slider.owl-carousel .owl-controls .owl-nav
+	margin-top 0
+
+.Banner-slider.owl-carousel .owl-controls .owl-dots
+	position absolute
+	right 40px
+	top 40%
+	
+.Banner-slider.owl-carousel .owl-controls .owl-dots .owl-dot
+	display block
+	
+.Banner-slider.owl-carousel .owl-controls .owl-dots .owl-dot span
+	width 10px
+	height 10px
+	background transparent
+	border-radius 50%
+	border 1px solid $white
+	
+.Banner-slider.owl-carousel .owl-controls .owl-dots .owl-dot.active span
+	background-color $white
+
+// .Banner-slider.owl-carousel .owl-controls .owl-nav .owl-prev	
+// .Banner-slider.owl-carousel .owl-controls .owl-nav .owl-next
+// 	position absolute
+// 	top 45%
+// 	font-size 4em
+// 	background-color transparent
+
+// .Banner-slider.owl-carousel .owl-controls .owl-nav .owl-prev	
+// 	left 0	
+	
+// .Banner-slider.owl-carousel .owl-controls .owl-nav .owl-next	
+// 	right 0	
 	
 	
 @media screen and (min-width:480px)
