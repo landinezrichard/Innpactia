@@ -10,12 +10,15 @@
 		width 100%
 		max-width 1035px
 		margin 20px auto 40px
+		min-height 233px
 	&-izq
 		display inline-block
 		width 30%
 		vertical-align initial
 		margin 0 2%
 	&-img
+		display inline-block !important
+		max-width 164px
 		border-radius 50%
 	&-der
 		width 60%
@@ -40,6 +43,38 @@
 		margin-top 2em
 	&-autorD
 		font-weight 500
+		
+/*Controles OWl*/
+.SliderBlue-list.owl-carousel .owl-controls .owl-nav
+	margin-top 0
+	
+.SliderBlue-list.owl-carousel .owl-controls .owl-dots	
+	position absolute
+	left 50px
+	right 50px
+	bottom 10px
+	margin -40px auto 0	
+	
+.SliderBlue-list.owl-carousel .owl-controls .owl-dots .owl-dot span
+	width 20px
+	height 20px
+	background $white
+	border-radius 50%	
+	
+.SliderBlue-list.owl-carousel .owl-controls .owl-dots .owl-dot.active span
+	background-color $blue
+
+.SliderBlue-list.owl-carousel .owl-controls .owl-nav .owl-prev	
+.SliderBlue-list.owl-carousel .owl-controls .owl-nav .owl-next
+	position absolute
+	bottom 0
+	background-color transparent
+
+.SliderBlue-list.owl-carousel .owl-controls .owl-nav .owl-prev	
+	left 0
+	
+.SliderBlue-list.owl-carousel .owl-controls .owl-nav .owl-next	
+	right 0
 /*Tablet Landscape*/
 @media screen and (min-width:1024px)
 	.SliderBlue
@@ -49,3 +84,10 @@
 			font-size 1.32em
 		&-autor
 			font-size 0.99em
+	
+	/*Controles Owl*/
+	.SliderBlue-list.owl-carousel .owl-controls .owl-dots
+		bottom 20px
+	.SliderBlue-list.owl-carousel .owl-controls .owl-nav .owl-prev	
+	.SliderBlue-list.owl-carousel .owl-controls .owl-nav .owl-next
+		top 40%

@@ -2,8 +2,49 @@
 
 .SliderColor
 	display inline-block
-	width 100%
-	background $fucsia
+	width 100%	
+	
+	&-full		
+		display inline-block
+		width 100%
+		min-height 230px
+	& .owl-item
+		&:nth-child(17n+1)
+			.SliderColor-full
+				background $fucsia
+		&:nth-child(17n+2)
+			.SliderColor-full
+				background $blue
+		&:nth-child(17n+3)
+			.SliderColor-full
+				background $blue1
+		&:nth-child(17n+4)
+			.SliderColor-full
+				background $blue2
+		&:nth-child(17n+5)
+			.SliderColor-full
+				background $blue3
+		&:nth-child(17n+6)
+			.SliderColor-full
+				background $blue4
+		&:nth-child(17n+5)
+			.SliderColor-full
+				background $blue5
+		&:nth-child(17n+6)
+			.SliderColor-full
+				background $blue6
+		&:nth-child(17n+7)
+			.SliderColor-full
+				background $blue7
+		&:nth-child(17n+8)
+			.SliderColor-full
+				background $blue8
+		&:nth-child(17n+9)
+			.SliderColor-full
+				background $red_gp
+		&:nth-child(17n+10)
+			.SliderColor-full
+				background $orange_em
 	
 	&-item
 		display inline-block
@@ -20,11 +61,49 @@
 		display inline-block
 		vertical-align middle
 		margin 0 2%
+	// &-img
+	// 	display none
 	&-txt
 		text-align left
 		color $white
 		font-weight 300
 		font-size 0.92em
+		// display none
+		
+/*Controles OWl*/
+.SliderColor.owl-carousel .owl-controls
+	position absolute
+	bottom 0
+	left 0
+	right 0
+	max-width 1200px
+	margin 0 auto
+.SliderColor.owl-carousel .owl-controls .owl-nav
+	margin-top 0
+	
+.SliderColor.owl-carousel .owl-controls .owl-dots .owl-dot
+	display block
+	
+.SliderColor.owl-carousel .owl-controls .owl-dots .owl-dot span
+	width 10px
+	height 10px
+	background transparent
+	border-radius 50%
+	border 1px solid $white
+	
+.SliderColor.owl-carousel .owl-controls .owl-dots .owl-dot.active span
+	background-color $white
+
+.SliderColor.owl-carousel .owl-controls .owl-nav .owl-prev	
+.SliderColor.owl-carousel .owl-controls .owl-nav .owl-next	
+	background-color transparent
+
+.SliderColor.owl-carousel .owl-controls .owl-nav .owl-prev	
+	float left
+	
+.SliderColor.owl-carousel .owl-controls .owl-nav .owl-next	
+	float right
+
 /*Tablet Landscape*/
 @media screen and (min-width:1024px)
 	.SliderColor
@@ -32,3 +111,6 @@
 			margin 40px auto
 		&-txt
 			font-size 1.32em
+	/*Controles Owl*/
+	.SliderColor.owl-carousel .owl-controls	
+		top 40%

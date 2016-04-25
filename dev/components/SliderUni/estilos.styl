@@ -5,11 +5,15 @@
 	width 100%
 	background $white
 	
+	&-list
+		display inline-block
+		width 100%
+	
 	&-item
 		display inline-block
 		width 100%
 		max-width 1035px
-		margin 20px auto
+		margin 20px auto		
 	&-izq
 		display inline-block
 		width 60%
@@ -30,12 +34,67 @@
 		color $gray
 		font-weight 300
 		font-size 0.81em
+/*Controles OWl*/
+.SliderUni-list.owl-carousel .owl-controls .owl-nav
+	margin-top 0
+
+.SliderUni-list.owl-carousel .owl-controls .owl-dots
+	position absolute
+	bottom 0
+	left 5%
+.SliderUni-list.owl-carousel .owl-controls .owl-dots .owl-dot
+	float left
+	&:nth-child(7n+1) span
+		background $blue1
+	&:nth-child(7n+2) span
+		background $blue2
+	&:nth-child(7n+3) span
+		background $blue3
+	&:nth-child(7n+4) span
+		background $blue4
+	&:nth-child(7n+5) span
+		background $blue5
+	&:nth-child(7n+6) span
+		background $blue6
+	&:nth-child(7n+7) span
+		background $blue7
+	
+.SliderUni-list.owl-carousel .owl-controls .owl-dots .owl-dot span
+	width 45px	
+	height 4px
+	margin 0
+	float left
+	border-radius inherit
+	border-radius 0
+	
+.SliderUni-list.owl-carousel .owl-controls .owl-dots .owl-dot.active span
+	background $blue
+	
+@media screen and (min-width:480px)
+	.SliderUni
+		&-item
+			min-height 171px
+	.SliderUni-list.owl-carousel .owl-controls .owl-dots .owl-dot span
+		width 55px
+@media screen and (min-width:720px)
+	.SliderUni
+		&-item
+			min-height 211px
+	.SliderUni-list.owl-carousel .owl-controls .owl-dots .owl-dot span
+		width 85px
 /*Tablet Landscape*/
 @media screen and (min-width:1024px)
 	.SliderUni
 		&-item
 			margin 40px auto
+			min-height 251px
 		&-title
 			font-size 1.32em
 		&-txt
 			font-size 1.15em
+			
+	.SliderUni-list.owl-carousel .owl-controls .owl-dots	
+		bottom 10%
+		left 5%	
+	.SliderUni-list.owl-carousel .owl-controls .owl-dots .owl-dot span
+		width 108px
