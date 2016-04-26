@@ -8,10 +8,15 @@
 	src: url('../fonts/HelveticaNeue.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	
+@font-face
+	font-family: 'HelveticaNeueLightCn';
+	src: url('../fonts/HelveticaNeue-LightCond.ttf');
 
 
 $white = #FFF
 $transparent_white = rgba(255,255,255,0.4)
+$transparent_white2 = rgba(255,255,255,0.7)
 
 $black = #000
 $transparent_black= rgba(0,0,0,0.4)
@@ -43,10 +48,12 @@ $transparent_blue = rgba(0,144,208,0.7)
 html
 	font-size 16px
 	font-family: 'HelveticaNeue', sans-serif
+	width 100%
 	height 100%
 
 body
 	background $white
+	width 100%
 	height 100%
 	
 img
@@ -114,6 +121,12 @@ a
 
 /*SHARE*/
 @import "../components/Share/estilos.styl"
+
+/*PLANES*/
+@import "../components/Planes/estilos.styl"
+
+/*FOOTER INTERNA*/
+@import "../components/FootInt/estilos.styl"
 
 .u--ocultar
 	display none
