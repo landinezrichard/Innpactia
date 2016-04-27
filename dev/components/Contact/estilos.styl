@@ -1,0 +1,147 @@
+/*CONTACTO*/
+
+.Contact
+	display inline-block
+	width 100%
+	min-height 91vh
+	background url('../images/06-trabaja/logo_innpactia_big.png') center left no-repeat
+	float left
+	
+	& .u-centrar
+		position relative		
+		display table
+		height 91vh
+		// margin-bottom 68px
+		padding-bottom 68px
+
+	&-form
+		display table-cell
+		vertical-align middle
+		background $transparent_white2
+		max-width 700px
+		margin 15px 2.5%
+		padding 15px 
+		// position absolute
+		// top 50%
+		// right 0
+		// transform translateY(-50%)
+		
+	&-txt
+		// font-family 'HelveticaNeueLightCn'
+		font-weight 300
+		font-size 0.77em
+		color $gray
+		text-align left
+		
+	&-field
+		text-align center
+		border none
+		padding 0
+		margin 15px 0
+		width 100%
+	&-input
+		border 1px solid $blue5
+		padding .5em
+		color $gray
+		display inline-block
+		width 100%
+		float left
+		margin 5px 0
+		box-sizing border-box
+		font-size 0.81em
+		font-weight 400
+		// $light_blue
+			
+		&:first-child
+			margin-left 0
+		&:last-child
+			margin-right 0
+			
+		&::-webkit-input-placeholder
+			color $blue5
+		&::-moz-placeholder
+			color $blue5
+		&:-moz-placeholder
+			color $blue5
+		&:-ms-input-placeholder
+			color $blue5
+	&-txtArea
+		border 1px solid $blue5
+		width 100%
+		color $gray
+		padding .5em
+		font-size 0.81em
+		font-weight 400
+		box-sizing border-box
+		min-height 120px
+		
+		&::-webkit-input-placeholder
+			color $blue5
+		&::-moz-placeholder
+			color $blue5
+		&:-moz-placeholder
+			color $blue5
+		&:-ms-input-placeholder
+			color $blue5
+	
+	&-btnContainer
+		display inline-block
+		width 100%
+		margin 25px 0
+		text-align left
+	&-btn
+		width 135px
+		height 35px
+		color $white
+		background $blue
+		border none
+		border 2px solid $blue5
+		border-bottom none
+		text-transform uppercasse
+@media screen and (min-width:480px)
+	.Contact
+		&-input
+			display inline-block
+			width 30%
+			float left
+			margin 2.5%
+@media screen and (min-width:600px)
+	.Contact
+		&-form
+			display table-cell
+			vertical-align middle
+			// position absolute
+			// top 50%
+			// // right 0
+			// transform translateY(-50%)
+			// right -15%
+		
+/*Tablet Landscape*/
+@media screen and (min-width:1024px)
+	.Contact
+		&-form
+			margin 45px 2.5%			
+			
+		&-txt
+			font-size 0.87em
+		// &-field
+		// 	display flex
+		// 	flex-flow row
+		// 	justify-content space-between
+		&-input		
+			display inline-block
+			width 30%
+			float left
+			margin 2.5%
+		
+		&-txtArea
+			width 100%
+			height 180px
+			
+		&-btnContainer		
+			margin 50px 0
+@media screen and (min-width:1280px)
+	.Contact
+		&-form
+			position relative
+			right -30%
