@@ -2,11 +2,11 @@ $(document).ready(function() {
 
 	/*Funcionalidades Menu*/
 
-	var menus = ['.Menu'];
+	var menus = ['.Header-menuList'];
 
 	/*Mostrar menu mobile*/
 	$('.Header-menuBtn').click(function(){
-		mostrarOcultar('.Menu');
+		mostrarOcultar('.Header-menuList');
 	});
 
 	function mostrarOcultar(elemento){

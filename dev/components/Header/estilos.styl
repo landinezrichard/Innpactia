@@ -3,11 +3,7 @@
 	display inline-block
 	width 100%
 	background $white
-	// position fixed
-	// top 0
-	// left 0
-	// right 0
-	// z-index 99999
+	position relative	
 	
 	&-logoLink
 		display inline-block
@@ -33,22 +29,26 @@
 		padding 0
 		margin 0 0
 		overflow-x hidden
-		display inline-block
-		float right
-		clear both
+		display none
+		position absolute
+		top 46px
+		left 0
+		right 0
+		z-index 99999
+		background $blue
 	&-menuItem
 		display inline-block
 		margin 0
-		float left		
+		float left
+		width 100%	
 		&:hover
-			background $blue
-			.Header-menuLink
-				color $white
+			background $blue8
+			
 	&-menuLink
 		cursor pointer
 		line-height 42px
 		padding 0 23px
-		color $blue
+		color $white
 		font-weight 400
 		font-size .75em
 		display inline-block		
@@ -60,6 +60,18 @@
 		width 50px
 		height 4px
 		float left
+		
+	&-menuBtn
+		cursor pointer
+		float right
+		display inline-block
+		clear both
+		& .Header-menuLink
+			color $blue
+		&:hover
+			background $blue
+			.Header-menuLink
+				color $white
 		
 .fa-bars
 	margin-left 0.65em
@@ -74,7 +86,28 @@
 			width 60px
 @media screen and (min-width:720px)
 	.Header
-		// position static
+		
+		&-menuList
+			list-style none
+			padding 0
+			margin 0 0
+			overflow-x hidden
+			display inline-block !important
+			float right
+			clear both
+			background $white
+			position static
+			
+		&-menuItem
+			width auto
+			&:hover
+				background $blue
+				.Header-menuLink
+					color $white
+			
+		&-menuLink
+			color $blue
+
 		&-menuBtn
 			display none !important
 		&-bar
