@@ -36,6 +36,8 @@
 		right 0
 		z-index 99999
 		background $blue
+		overflow-y scroll
+		height 80vh
 	&-menuItem
 		display inline-block
 		margin 0
@@ -43,6 +45,14 @@
 		width 100%	
 		&:hover
 			background $blue8
+		& a
+			cursor pointer
+			line-height 42px
+			padding 0 23px
+			color $white
+			font-weight 400
+			font-size .75em
+			display inline-block
 			
 	&-menuLink
 		cursor pointer
@@ -97,14 +107,17 @@
 			clear both
 			background $white
 			position static
+			overflow-y hidden
+			height auto
 			
 		&-menuItem
 			width auto
 			&:hover
 				background $blue
-				.Header-menuLink
+				& a				
 					color $white
-			
+			& a
+				color $blue
 		&-menuLink
 			color $blue
 
@@ -126,7 +139,9 @@
 			display inline-block
 		&-menuItem
 			display inline-block
-			margin 0			
+			margin 0
+			& a
+				font-size .99em		
 		&-menuLink			
 			font-size .99em
 		&-bar
