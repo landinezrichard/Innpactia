@@ -21,6 +21,8 @@ $(document).ready(function() {
 	/*Boton "Como Funciona"*/
 	var seccionHow = $('.How');
 	var seccionHeader = $('.Header');
+	var seccionBanner = $('.Banner');
+	var margenBanner;
 
 	$('.Banner-btn').click(function(event){
 		event.preventDefault();
@@ -30,20 +32,27 @@ $(document).ready(function() {
 			300
 		);
 		seccionHeader.animate({
-				marginTop:662,
+				marginTop:662,				
 			},
 			300
-		);
-
-
+		);		
+		seccionHeader.css('position','relative');
+		margenBanner = seccionBanner.css('margin-top');
+		seccionBanner.css('marginTop','0');		
+		
 	});
+	
 	/*Oculta seccion "como funciona"*/
 	$(window).scroll(function(){
 		var of_window = $(window).scrollTop();
 		var of_header = seccionHeader.offset().top;
 		if(of_window >= of_header && of_header == 662){
 			seccionHow.css('top','-662px');
-			seccionHeader.css('margin-top','0');
+			seccionHeader.css({
+				'margin-top':'0',
+				'position':'fixed'
+			});
+			seccionBanner.css('marginTop', margenBanner);
 			// $('html,body').scrollTop(0);
 			$('html,body').animate({
 				scrollTop: 0

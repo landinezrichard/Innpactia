@@ -3,7 +3,12 @@
 	display inline-block
 	width 100%
 	background $white
-	position relative	
+	// position relative
+	position fixed
+	left 0
+	right 0
+	top 0
+	z-index 30
 	
 	&-logoLink
 		display inline-block
@@ -96,7 +101,10 @@
 			width 60px
 @media screen and (min-width:720px)
 	.Header
-		
+		height 60px
+		line-height 60px
+		&-menu
+			line-height 56px
 		&-menuList
 			list-style none
 			padding 0
@@ -110,12 +118,18 @@
 			overflow-y hidden
 			height auto
 			
+			& li
+				box-sizing border-box
+				height 56px
+			
 		&-menuItem
 			width auto
 			&:hover
-				background $blue
-				& a				
-					color $white
+				border-top 4px outset #767676
+				background transparent
+				// background $blue
+				// & a
+				// 	color $white
 			& a
 				color $blue
 		&-menuLink
@@ -128,11 +142,15 @@
 /*Tablet Landscape*/
 @media screen and (min-width:1024px)
 	.Header
+		height 60px
+		line-height 60px
 		&-logoLink
-			width 188px
-			// height 60px
+			width 188px			
 			height 46px
 			background url('../images/01-index/logo-innpactia.png') center no-repeat
+			vertical-align middle
+		&-menu
+			line-height 56px
 		&-menuList
 			list-style none			
 			overflow-x hidden
