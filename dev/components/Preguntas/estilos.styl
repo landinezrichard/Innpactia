@@ -1,0 +1,193 @@
+/*PREGUNTAS*/
+
+.Preguntas
+	display inline-block
+	width 100%	
+	min-height 100vh
+	background url('../images/04-planes/Fondo_Planes.jpg') center top no-repeat
+	background-size cover
+	float left
+	
+	& .u-centrar
+		height 100vh		
+
+	&-container
+		display inline-block
+		vertical-align middle
+		width 100%
+		min-height 91vh		
+		background #E6E6E6
+		padding-bottom 68px
+		
+	&-head
+		display inline-block
+		width 100%		
+		background $white		
+		
+	&-headC
+		display inline-block
+		width 95%
+		margin 15px 2.5%
+		line-height 51px		
+		
+	&-title
+		font-size 24px
+		color $gray2		
+		vertical-align middle
+		margin 0		
+		
+	&-buscador
+		display inline-block		
+		vertical-align middle		
+		
+	&-btnBuscar
+		border none
+		background #27348B url('../images/07-preguntas/lupa.png') center no-repeat
+		width 51px
+		height 51px
+		margin 0
+		padding 0
+		float left
+		vertical-align middle
+		
+	&-input
+		border none
+		border 3px solid #27348B
+		box-sizing border-box
+		padding .2em
+		text-align center
+		font-size 14px
+		color #808080
+		margin 0
+		float left
+		vertical-align middle
+		width 270px
+		height 51px
+		
+		&::-webkit-input-placeholder
+			color #808080
+			font-size 14px
+		&::-moz-placeholder
+			color #808080
+			font-size 14px
+		&:-moz-placeholder
+			color #808080
+			font-size 14px
+		&:-ms-input-placeholder
+			color #808080
+			font-size 14px
+			
+	&-list
+		display inline-block
+		width 95%
+		margin 20px 2.5%
+		
+	&-item
+		display inline-block
+		width 100%
+		background $white
+		border-bottom 3px solid $gray2
+
+	&-itemHead		
+		cursor pointer  		
+		display inline-block
+		width 100%
+		
+	&-itemTitleContainer
+		display inline-block
+		float left
+	
+	&-imgContainer
+		// float left		
+		display inline-block		
+		vertical-align middle
+		
+	&-imgContainer
+	&-arrow
+		width 40px
+		
+	&-itemTitle
+		display inline-block
+		margin 0
+		padding 0
+		vertical-align middle
+		font-size 26px
+		color $gray2
+		
+	&-arrowContainer		
+		display inline-block
+		// float right
+		vertical-align middle
+		float right
+		
+	&-itemContent
+		display none
+		width 100%
+		text-align left 
+		padding 0 110px 0 120px
+		box-sizing border-box  	
+		
+		& p
+			font-size 32px
+			color $gray2
+			text-align left
+			
+		& a
+			color #213F99
+			cursor pointer
+			
+@media screen and (min-width:480px)
+	.Preguntas
+		&-headC
+			margin 20px 2.5%
+		&-title
+			font-size 26px
+		&-itemTitle
+			font-size 29px
+			
+		&-list
+			margin 30px 2.5%
+			
+@media screen and (min-width:720px)
+	.Preguntas
+		&-headC
+			margin 30px 2.5%
+		&-title
+			font-size 28px
+		&-itemTitle
+			font-size 30px
+		&-list
+			margin 45px 2.5%
+			
+@media screen and (min-width:1024px)
+	.Preguntas
+		&-headC
+			margin 40px 2.5%
+		&-title
+			float left
+			font-size 30px
+		&-itemTitle
+			font-size 33px
+			
+		&-buscador
+			float right
+			
+		&-list
+			margin 65px 2.5%
+			
+@media screen and (min-width:1280px)
+	.Preguntas
+		&-headC
+			margin 40px 2.5%
+		&-title
+			float left
+			font-size 30px
+			
+		&-itemTitle
+			font-size 33px
+			
+		&-buscador
+			float right
+			
+		&-list
+			margin 80px 2.5%

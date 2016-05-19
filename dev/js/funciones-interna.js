@@ -18,4 +18,9 @@ $(document).ready(function() {
 		$(elemento).slideToggle();
 	}
 
+	/* Acordeon Preguntas frecuentes*/
+	$('.Preguntas-itemHead').click(function(){		
+		$(this).next().fadeToggle();
+	});
+
 });
