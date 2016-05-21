@@ -4,8 +4,8 @@
 	display inline-block
 	width 100%	
 	min-height 100vh
-	background url('../images/04-planes/Fondo_Planes.jpg') center top no-repeat
-	background-size cover
+	// background url('../images/04-planes/Fondo_Planes.jpg') center top no-repeat
+	// background-size cover
 	float left
 	
 	& .u-centrar
@@ -83,19 +83,30 @@
 		margin 20px 2.5%
 		
 	&-item
-		display inline-block
-		width 100%
+		// display inline-block
+		// width 100%
 		background $white
 		border-bottom 3px solid $gray2
+		// hoy
+		padding 8px 10px
+		box-sizing border-box
 
 	&-itemHead		
 		cursor pointer  		
 		display inline-block
 		width 100%
+		position relative
+		min-height 50px
 		
 	&-itemTitleContainer
-		display inline-block
+		// display inline-block
 		float left
+		//hoy
+		width 92%
+		line-height 22px
+		display table
+		top 0
+		height 50px
 	
 	&-imgContainer
 		// float left		
@@ -103,29 +114,57 @@
 		vertical-align middle
 		
 	&-imgContainer
-	&-arrow
-		width 40px
+		width 52px
+		margin-right 6px
+		margin-left -2px
+		
+	// &-imgContainer
+	// &-arrow
+	// 	width 40px
 		
 	&-itemTitle
-		display inline-block
+		// display inline-block
 		margin 0
 		padding 0
 		vertical-align middle
-		font-size 26px
+		font-size 18px
 		color $gray2
+		//hoy
+		display table-cell
+		height 52px
+		line-height 22px
+		
+		& span
+			display table-cell
+			margin 0
+			padding 0
+			vertical-align middle
+			width 514px
+			height 52px
+			line-height 22px
+			text-align left
 		
 	&-arrowContainer		
-		display inline-block
+		// display inline-block
 		// float right
 		vertical-align middle
-		float right
+		//hoy
+		width 21px
+		height 21px
+		position absolute
+		right 4px
+		top 50%
+		margin-top -10px
 		
 	&-itemContent
 		display none
-		width 100%
+		// width 100%
 		text-align left 
-		padding 0 110px 0 120px
-		box-sizing border-box  	
+		// padding 0 110px 0 120px
+		box-sizing border-box
+		//hoy
+		margin 0 10px
+		padding-top 5px
 		
 		& p
 			font-size 32px
@@ -143,8 +182,7 @@
 		&-title
 			font-size 26px
 		&-itemTitle
-			font-size 29px
-			
+			font-size 29px			
 		&-list
 			margin 30px 2.5%
 			
@@ -159,6 +197,11 @@
 		&-list
 			margin 45px 2.5%
 			
+@media screen and (min-width:768px)
+	.Preguntas
+		&-itemContent
+			margin-left 75px
+			padding-right 15px
 @media screen and (min-width:1024px)
 	.Preguntas
 		&-headC
