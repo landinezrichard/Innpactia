@@ -4,6 +4,7 @@
 	display inline-block
 	width 100%	
 	min-height 100vh
+	background url('../images/06-trabaja/logo_innpactia_big.png') center left no-repeat
 	// background url('../images/04-planes/Fondo_Planes.jpg') center top no-repeat
 	// background-size cover
 	float left
@@ -82,12 +83,9 @@
 		width 95%
 		margin 20px 2.5%
 		
-	&-item
-		// display inline-block
-		// width 100%
+	&-item		
 		background $white
-		border-bottom 3px solid $gray2
-		// hoy
+		border-bottom 3px solid $gray2		
 		padding 8px 10px
 		box-sizing border-box
 
@@ -98,38 +96,29 @@
 		position relative
 		min-height 50px
 		
-	&-itemTitleContainer
-		// display inline-block
-		float left
-		//hoy
+	&-itemTitleContainer		
+		float left		
 		width 92%
 		line-height 22px
 		display table
 		top 0
 		height 50px
 	
-	&-imgContainer
-		// float left		
+	&-imgContainer			
 		display inline-block		
 		vertical-align middle
 		
 	&-imgContainer
 		width 52px
 		margin-right 6px
-		margin-left -2px
+		margin-left -2px	
 		
-	// &-imgContainer
-	// &-arrow
-	// 	width 40px
-		
-	&-itemTitle
-		// display inline-block
+	&-itemTitle		
 		margin 0
 		padding 0
 		vertical-align middle
 		font-size 18px
-		color $gray2
-		//hoy
+		color $gray2		
 		display table-cell
 		height 52px
 		line-height 22px
@@ -144,11 +133,8 @@
 			line-height 22px
 			text-align left
 		
-	&-arrowContainer		
-		// display inline-block
-		// float right
-		vertical-align middle
-		//hoy
+	&-arrowContainer
+		vertical-align middle		
 		width 21px
 		height 21px
 		position absolute
@@ -158,16 +144,13 @@
 		
 	&-itemContent
 		display none
-		// width 100%
-		text-align left 
-		// padding 0 110px 0 120px
+		text-align left
 		box-sizing border-box
-		//hoy
 		margin 0 10px
 		padding-top 5px
 		
 		& p
-			font-size 32px
+			font-size 15px
 			color $gray2
 			text-align left
 			
@@ -180,28 +163,41 @@
 		&-headC
 			margin 20px 2.5%
 		&-title
-			font-size 26px
+			font-size 27px
 		&-itemTitle
-			font-size 29px			
+			font-size 21px			
 		&-list
 			margin 30px 2.5%
+		&-itemContent
+			& p
+				font-size 18px
 			
 @media screen and (min-width:720px)
 	.Preguntas
 		&-headC
 			margin 30px 2.5%
 		&-title
-			font-size 28px
-		&-itemTitle
 			font-size 30px
+		&-itemTitle
+			font-size 24px
 		&-list
 			margin 45px 2.5%
+		&-itemContent
+			& p
+				font-size 21px
+		&-arrowContainer
+			right 8px
 			
 @media screen and (min-width:768px)
 	.Preguntas
 		&-itemContent
 			margin-left 75px
 			padding-right 15px
+@media screen and (min-width:840px)
+	.Preguntas
+		&-arrowContainer
+			right 12px
+		
 @media screen and (min-width:1024px)
 	.Preguntas
 		&-headC
@@ -210,7 +206,7 @@
 			float left
 			font-size 30px
 		&-itemTitle
-			font-size 33px
+			font-size 27px
 			
 		&-buscador
 			float right
@@ -218,7 +214,36 @@
 		&-list
 			margin 65px 2.5%
 			
+		&-itemContent
+			margin-left 95px
+			padding-right 35px
+
+			& p
+				font-size 24px
+		&-arrowContainer
+			right 16px
+			
 @media screen and (min-width:1280px)
+	.Preguntas
+		&-headC
+			margin 40px 2.5%
+		&-title
+			float left
+			font-size 30px
+			
+		&-itemTitle
+			font-size 30px
+			
+		&-buscador
+			float right
+			
+		&-list
+			margin 80px 2.5%
+			
+		&-itemContent
+			& p
+				font-size 27px
+@media screen and (min-width:1350px)
 	.Preguntas
 		&-headC
 			margin 40px 2.5%
@@ -234,3 +259,7 @@
 			
 		&-list
 			margin 80px 2.5%
+			
+		&-itemContent
+			& p
+				font-size 32px

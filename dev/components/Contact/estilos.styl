@@ -10,8 +10,7 @@
 	& .u-centrar
 		position relative		
 		display table
-		height 91vh
-		// margin-bottom 68px
+		height 91vh		
 		padding-bottom 68px
 
 	&-form
@@ -20,14 +19,15 @@
 		background $transparent_white2
 		max-width 700px
 		margin 15px 2.5%
-		padding 15px 
-		// position absolute
-		// top 50%
-		// right 0
-		// transform translateY(-50%)
+		padding 15px
 		
-	&-txt
-		// font-family 'HelveticaNeueLightCn'
+		& form p
+			font-weight 300
+			font-size 0.77em
+			color $gray
+			text-align left
+		
+	&-txt		
 		font-weight 300
 		font-size 0.77em
 		color $gray
@@ -39,18 +39,30 @@
 		padding 0
 		margin 15px 0
 		width 100%
+		
+		& p
+			width 100%
+			display inline-block			
+			float left
+			margin 5px 0
+			box-sizing border-box
+			
+			&:first-child
+				margin-left 0
+			&:last-child
+				margin-right 0	
+
 	&-input
 		border 1px solid $blue5
-		padding .5em
+		padding .5rem
 		color $gray
 		display inline-block
 		width 100%
-		float left
-		margin 5px 0
+		// float left
+		// margin 5px 0
 		box-sizing border-box
-		font-size 0.81em
-		font-weight 400
-		// $light_blue
+		font-size 0.81rem
+		font-weight 400		
 			
 		&:first-child
 			margin-left 0
@@ -72,8 +84,8 @@
 		border 1px solid $blue5
 		width 100%
 		color $gray
-		padding .5em
-		font-size 0.81em
+		padding .5rem
+		font-size 0.81rem
 		font-weight 400
 		box-sizing border-box
 		min-height 120px
@@ -92,6 +104,9 @@
 		width 100%
 		margin 25px 0
 		text-align left
+		
+		& p
+			margin 0
 	&-btn
 		width 135px
 		height 35px
@@ -103,21 +118,23 @@
 		text-transform uppercasse
 @media screen and (min-width:480px)
 	.Contact
+		
+		&-field
+			& p
+				width 30%
+				margin 2.5%
+
 		&-input
 			display inline-block
-			width 30%
+			// width 30%
 			float left
-			margin 2.5%
+			// margin 2.5%
 @media screen and (min-width:600px)
 	.Contact
 		&-form
 			display table-cell
 			vertical-align middle
-			// position absolute
-			// top 50%
-			// // right 0
-			// transform translateY(-50%)
-			// right -15%
+			
 @media screen and (min-width:720px)
 	.Contact
 		&-form
@@ -126,19 +143,23 @@
 @media screen and (min-width:1024px)
 	.Contact
 		&-form
-			margin 45px 2.5%			
+			margin 45px 2.5%
 			
+			& form p			
+				font-size 0.87em
 		&-txt
 			font-size 0.87em
-		// &-field
-		// 	display flex
-		// 	flex-flow row
-		// 	justify-content space-between
-		&-input		
+			
+		&-field
+			& p
+				width 30%
+				margin 2.5%
+		
+		&-input
 			display inline-block
-			width 30%
+			// width 30%
 			float left
-			margin 2.5%
+			// margin 2.5%
 		
 		&-txtArea
 			width 100%
