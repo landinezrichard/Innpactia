@@ -22,7 +22,8 @@ $(document).ready(function() {
 	var seccionHow = $('.How');
 	var seccionHeader = $('.Header');
 	var seccionBanner = $('.Banner');
-	var margenBanner;
+	var margenBanner = seccionBanner.css('margin-top');
+	var howAlto = seccionHow.height()+1;
 
 	$('.Banner-btn').click(function(event){
 		event.preventDefault();
@@ -30,15 +31,16 @@ $(document).ready(function() {
 				top:0,
 			},
 			300
-		);
+		);	
+		howAlto = seccionHow.height()+1;
 		seccionHeader.animate({
-				marginTop:662,				
+				marginTop:howAlto,
 			},
 			300
 		);		
 		seccionHeader.css('position','relative');
-		margenBanner = seccionBanner.css('margin-top');
-		seccionBanner.css('marginTop','0');		
+		// margenBanner = seccionBanner.css('margin-top');
+		seccionBanner.css('marginTop','0');
 		
 	});
 	
@@ -46,17 +48,18 @@ $(document).ready(function() {
 	$(window).scroll(function(){
 		var of_window = $(window).scrollTop();
 		var of_header = seccionHeader.offset().top;
-		if(of_window >= of_header && of_header == 662){
-			seccionHow.css('top','-662px');
+		if(of_window >= of_header && of_header == howAlto){
+			seccionHow.css('top','-200%');
 			seccionHeader.css({
 				'margin-top':'0',
 				'position':'fixed'
 			});
 			seccionBanner.css('marginTop', margenBanner);
 			// $('html,body').scrollTop(0);
-			$('html,body').animate({
-				scrollTop: 0
-			},5);
+			window.scrollTo(0, 0);
+			// $('html,body').animate({
+			// 	scrollTop: 0
+			// },5);
 		}
 
 		/*Boton de volver arriba*/
@@ -72,15 +75,21 @@ $(document).ready(function() {
 	$('.How-closeBtn').click(function(event){
 		event.preventDefault();
 		seccionHow.animate({
-				top:-662,
+				top:'-200%',
 			},
 			300
 		);
-		$('.Header').animate({
-				marginTop:0,
-			},
-			300
-		);
+		seccionHeader.css({
+			'margin-top':'0',
+			'position':'fixed'
+		});		
+		seccionBanner.css('marginTop', margenBanner);	
+
+		// .animate({
+		// 		marginTop:0
+		// 	},
+		// 	300
+		// )	
 	});
 
 	/*Barra de Share Fixed*/
