@@ -155,6 +155,10 @@
 			color $gray2
 			text-align left
 			
+		& p img
+			width 100%
+			height 100%
+			
 		& a
 			color #213F99
 			cursor pointer
@@ -181,6 +185,8 @@
 			font-size 30px
 		&-itemTitle
 			font-size 24px
+			& span
+				width 820px
 		&-list
 			margin 45px 2.5%
 		&-itemContent
@@ -192,7 +198,7 @@
 @media screen and (min-width:768px)
 	.Preguntas
 		&-itemContent
-			margin-left 75px
+			margin-left 60px
 			padding-right 15px
 @media screen and (min-width:840px)
 	.Preguntas
@@ -209,6 +215,10 @@
 		&-itemTitle
 			font-size 27px
 			
+			& span
+				width 945px
+				line-height 35px
+			
 		&-buscador
 			float right
 			
@@ -216,7 +226,7 @@
 			margin 65px 2.5%
 			
 		&-itemContent
-			margin-left 95px
+			// margin-left 95px
 			padding-right 35px
 
 			& p

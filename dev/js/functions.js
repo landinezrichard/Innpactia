@@ -39,7 +39,6 @@ $(document).ready(function() {
 			300
 		);		
 		seccionHeader.css('position','relative');
-		// margenBanner = seccionBanner.css('margin-top');
 		seccionBanner.css('marginTop','0');
 		
 	});
@@ -55,11 +54,7 @@ $(document).ready(function() {
 				'position':'fixed'
 			});
 			seccionBanner.css('marginTop', margenBanner);
-			// $('html,body').scrollTop(0);
 			window.scrollTo(0, 0);
-			// $('html,body').animate({
-			// 	scrollTop: 0
-			// },5);
 		}
 
 		/*Boton de volver arriba*/
@@ -79,27 +74,34 @@ $(document).ready(function() {
 			},
 			300
 		);
-		seccionHeader.css({
-			'margin-top':'0',
-			'position':'fixed'
-		});		
-		seccionBanner.css('marginTop', margenBanner);	
+		seccionHeader.animate({
+				marginTop:0
+			},
+			300,
+			function (){
+				seccionBanner.animate({
+						marginTop:margenBanner
+					},
+					0,
+					function (){
+						seccionHeader.css({
+							'position':'fixed'
+						});
+					}
+				);
+			}
+		);		
 
-		// .animate({
-		// 		marginTop:0
-		// 	},
-		// 	300
-		// )	
 	});
 
 	/*Barra de Share Fixed*/
 	$('.Share-btn').click(showShare);
 
-	$('.Share').hover(function() {			
+	$('.Share').hover(function() {
 			$('.Share-all').animate({left:64});
 		},
 		function() {
-			$('.Share-all').animate({left:-270});			
+			$('.Share-all').animate({left:-270});
 		}
 	);
 
@@ -110,7 +112,7 @@ $(document).ready(function() {
 		var posleft =posleft.split('px');
 
 		if(posleft[0] == 64){
-			$('.Share-all').animate({left:-270});			
+			$('.Share-all').animate({left:-270});
 		}
 		if(posleft[0] == -270){
 			$('.Share-all').animate({left:64});
