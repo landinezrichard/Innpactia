@@ -208,16 +208,6 @@ $(document).ready(function() {
 	/*Boton Fixed de volver arriba*/
 	var btnVolver = $('.Footer-back');
 
-	// $(window).scroll(function(){
-	// 	var of_window = $(window).scrollTop();
-	// 	var alto_pantalla = $( window ).height();
-	// 	if(of_window >= alto_pantalla){
-	// 		btnVolver.fadeIn();
-	// 	}else{
-	// 		btnVolver.fadeOut();
-	// 	}
-	// });
-
 	btnVolver.click(function(event){
 		event.preventDefault();
 		$('html,body').animate({

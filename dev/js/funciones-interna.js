@@ -23,4 +23,33 @@ $(document).ready(function() {
 		$(this).next().fadeToggle();
 	});
 
+	/*Seleccionar interna*/
+
+	var URLhash = window.location.hash;
+	$(URLhash).css('left','0');
+
+	$('.FootInt-menu').on('click','ul li a',function(event){
+		// event.preventDefault();
+		var URLhash = window.location.hash;
+		var anterior = $(URLhash);
+		var idSeccion = $(this).attr('href');
+		var seccion =$(idSeccion);
+
+		if(URLhash !== idSeccion){
+			seccion
+				.css('z-index','2')
+				.animate(
+				{
+					left:0
+				},
+				300,
+				function(){					
+					anterior.css('left','-100%');
+					$(this).css('z-index','1');
+				}
+			);
+		}
+		// console.log(prueba);
+	});
+
 });
