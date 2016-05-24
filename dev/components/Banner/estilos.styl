@@ -12,10 +12,7 @@
 		z-index 0
 		position relative
 		text-align center
-		// max-height 600px
-
-	// &-item
-
+		
 	&-imageContainer
 		& img	
 			width 100%
@@ -52,6 +49,7 @@
 		margin 0
 		font-size 1.12em
 		font-weight 600
+		font-family: 'HelveticaNeue65-Medium',sans-serif;
 
 	&-p
 		display none
@@ -82,6 +80,8 @@
 		border-radius 10px
 		padding .2em
 		vertical-align middle
+		width 80%
+		height 40px
 	&-btnBuscar
 		border none
 		background url('../images/01-index/lupa.png') center no-repeat
@@ -133,19 +133,6 @@
 .Banner-slider.owl-carousel .owl-controls .owl-dots .owl-dot.active span
 	background-color $white
 
-// .Banner-slider.owl-carousel .owl-controls .owl-nav .owl-prev	
-// .Banner-slider.owl-carousel .owl-controls .owl-nav .owl-next
-// 	position absolute
-// 	top 45%
-// 	font-size 4em
-// 	background-color transparent
-
-// .Banner-slider.owl-carousel .owl-controls .owl-nav .owl-prev	
-// 	left 0	
-	
-// .Banner-slider.owl-carousel .owl-controls .owl-nav .owl-next	
-// 	right 0	
-
 .Banner-imageContainer .rev_slider_wrapper .tp-bullets
 	right 40px !important
 .Banner-imageContainer .rev_slider_wrapper .tp-bullets .bullet	
@@ -186,6 +173,10 @@
 @media screen and (min-width:720px)
 	.Banner
 		margin-top 60px
+		
+		&-input
+			width 570px
+			height 40px
 /*Tablet Landscape*/
 @media screen and (min-width:1024px)
 	.Banner		

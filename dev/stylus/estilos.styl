@@ -20,6 +20,9 @@
 @font-face
 	font-family: 'HelveticaNeueLight';
 	src: url('../fonts/HelveticaNeue-Light.otf');
+@font-face
+	font-family: 'HelveticaNeue65-Medium',sans-serif;
+	src: url('../fonts/HelveticaNeue-Medium.otf');
 
 
 $white = #FFF
@@ -118,6 +121,9 @@ img.alignright, img[align="right"] {float:right;margin: 2px 0px 5px 10px;}
 .clear {clear:both;}
 hr.clear {clear:both;visibility: hidden;margin: 0px;padding: 0px;height:0px;}
 
+/*Ventana Modal*/
+@import "remodal.styl"
+@import "remodal-default-theme.styl"
 
 /*HEADER*/
 @import "../components/Header/estilos.styl"
@@ -176,6 +182,9 @@ hr.clear {clear:both;visibility: hidden;margin: 0px;padding: 0px;height:0px;}
 
 /*FOOTER INTERNA*/
 @import "../components/FootInt/estilos.styl"
+
+/*REGISTRO*/
+@import "../components/Registro/estilos.styl"
 
 .u--ocultar
 	display none

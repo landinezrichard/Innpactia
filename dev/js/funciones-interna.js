@@ -27,6 +27,13 @@ $(document).ready(function() {
 
 	var URLhash = window.location.hash;
 	$(URLhash).css('left','0');
+	/*Ocultar menu redes interna*/
+	if(URLhash === "#planes"){		
+		$('.RedesInt').css('display','none');
+	}
+	else{
+		$('.RedesInt').css('display','inline-block');
+	}
 
 	$('.FootInt-menu').on('click','ul li a',function(event){
 		// event.preventDefault();
@@ -49,7 +56,22 @@ $(document).ready(function() {
 				}
 			);
 		}
-		// console.log(prueba);
+
+		if(URLhash === "#planes"){
+			$('.RedesInt').css('display','none');
+		}
+		else{
+			$('.RedesInt').css('display','inline-block');
+		}
+		
 	});
+
+	/*Mostrar texto Nosotros*/
+
+	$('.Nosotros-list').on('click','.Nosotros-item',function (event){
+		$(this).find('.Nosotros-itemTxt').fadeToggle();		
+	});
+
+
 
 });
