@@ -214,4 +214,13 @@ $(document).ready(function() {
 			scrollTop: 0
 		},600);
 	});
+
+
+	/*cambiar color barra search*/
+	$('.Banner-menulist').on('click','.Banner-menuItem',function(event){
+		event.preventDefault();
+		var color = $(this).css('background-color');
+		console.log(color);
+		$('.Banner-search').css('background-color',color);
+	});
 });
