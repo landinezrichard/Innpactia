@@ -2,8 +2,10 @@ section.How
 	div.u-centrar
 		h1.How-title
 			|	Cómo funciona
-		div.How-imgContainer
-			img.How-img(src="../images/01-index/pasos-infografia.png")
+		picture.How-imgContainer
+			source(media="(min-width: 800px)", srcset="../images/01-index/pasos-infografia.png")			
+			img(src="../images/01-index/pasos-infografia-mobil.png")
+			//- img.How-img(src="../images/01-index/pasos-infografia-mobil.png")
 		//- div.How-list
 		//- 	div.How-item
 		//- 		img.How-img(src="../images/01-index/step1.png")

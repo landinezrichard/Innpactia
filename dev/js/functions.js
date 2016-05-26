@@ -48,7 +48,7 @@ $(document).ready(function() {
 		var of_window = $(window).scrollTop();
 		var of_header = seccionHeader.offset().top;
 		if(of_window >= of_header && of_header == howAlto){
-			seccionHow.css('top','-200%');
+			seccionHow.css('top','-1000%');
 			seccionHeader.css({
 				'margin-top':'0',
 				'position':'fixed'
@@ -70,7 +70,7 @@ $(document).ready(function() {
 	$('.How-closeBtn').click(function(event){
 		event.preventDefault();
 		seccionHow.animate({
-				top:'-200%',
+				top:'-1000%',
 			},
 			300
 		);
