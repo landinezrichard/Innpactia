@@ -72,6 +72,23 @@ $(document).ready(function() {
 		$(this).find('.Nosotros-itemTxt').fadeToggle();		
 	});
 
+	//detectar cambio hash url
+
+	$(window).bind('hashchange', function () {
+		//detect hash change
+		var tab = window.location.hash.slice(1);
+
+		console.log(tab);
+
+		//Desactivar todo el contenido
+		// $('div.hash_content').each(function(){
+		// $(this).hide();
+		// });
+
+		//Activar el contenido
+		// var div_inactive = $('div.' + tab);
+		// div_inactive.show();
+	});
 
 
 });

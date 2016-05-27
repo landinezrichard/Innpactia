@@ -129,7 +129,7 @@ $(document).ready(function() {
 		nav: false,
 		autoPlay: true,
 		slideSpeed: 1000,
-		dots: true,
+		dots: false,
 		responsive: {
 			0:{
 				items:1
@@ -222,5 +222,25 @@ $(document).ready(function() {
 		var color = $(this).css('background-color');
 		console.log(color);
 		$('.Banner-search').css('background-color',color);
+	});
+
+	/*Menu lateral*/
+	$('.MenuL').on('click','li a',function(event){
+		event.preventDefault();
+		var irSeccion = $(this).attr('href');
+		var altoHeader = $('.Header').height();
+
+		if(irSeccion == '#inicio'){
+			$('html,body').animate({scrollTop:0},500);
+		}
+
+		if(irSeccion == '#hoy'){
+			var distancia = $('.Cifras').offset().top -altoHeader;
+			$('html,body').animate({scrollTop:distancia},500);
+		}
+		if(irSeccion == '#promesa'){
+			var distancia = $('.ValorMarca').offset().top -altoHeader;
+			$('html,body').animate({scrollTop:distancia},500);
+		}
 	});
 });
